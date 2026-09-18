@@ -1,0 +1,21 @@
+CREATE TABLE EnergyData (
+    RecordID INT PRIMARY KEY,
+    RecordDate DATE,
+    Region VARCHAR(50),
+    EnergySource VARCHAR(50),
+    EnergyGenerated_MWh DECIMAL(12,2),
+    EnergyConsumed_MWh DECIMAL(12,2),
+    PeakDemand_MW DECIMAL(10,2),
+    RenewableShare DECIMAL(5,2),
+    EnergyCost DECIMAL(12,2)
+);
+
+INSERT INTO EnergyData
+(RecordID, RecordDate, Region, EnergySource, EnergyGenerated_MWh,
+ EnergyConsumed_MWh, PeakDemand_MW, RenewableShare, EnergyCost)
+VALUES
+(1, '2026-01-05', 'Kerala', 'Solar', 1250.50, 1100.25, 520.40, 72.5, 85000),
+(2, '2026-01-12', 'Kerala', 'Hydro', 2100.75, 1980.60, 610.20, 81.3, 112000),
+(3, '2026-01-18', 'Tamil Nadu', 'Wind', 1850.40, 1700.35, 580.50, 68.7, 95000),
+(4, '2026-02-03', 'Karnataka', 'Solar', 1420.80, 1305.70, 545.60, 64.2, 91000),
+(5, '2026-02-15', 'Maharashtra', 'Coal', 3200.90, 3050.45, 820.30, 18.5, 245000);
