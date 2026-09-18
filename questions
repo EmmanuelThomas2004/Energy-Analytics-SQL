@@ -1,0 +1,5 @@
+Calculate total energy generated and total energy consumed for each region.
+Identify the energy source with the highest average energy generation.
+Calculate the energy surplus or deficit for each record by comparing energy generated with energy consumed.
+Rank regions based on their average renewable energy share using a window function.
+Calculate the cost per MWh generated for each energy source and identify the most expensive source.
